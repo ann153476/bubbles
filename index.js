@@ -1,6 +1,34 @@
 let bubbles = document.querySelector(".bubbles__box");
-console.log(bubbles);
-bubbles.addEventListener("click", () => {
+
+bubbles.addEventListener("click", (e) => {
   let sound = document.getElementById("Sound");
   sound.play();
+  console.log(e, e.target);
+  e.target.remove();
+  paint();
 });
+
+function paint() {
+  let markup = `<div 
+  id=${(Math.random() * (100 - 1) + 1).toFixed()}
+style="scale: ${(Math.random() * (1 - 0.1) + 0.1).toFixed(2)}; top: ${(
+    Math.random() * (70 - 1) +
+    1
+  ).toFixed()}%; left: ${(Math.random() * (70 - 1) + 1).toFixed()}%"
+class="bubble">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>`;
+  bubbles.insertAdjacentHTML("beforeend", markup);
+}
+
+function windowStart() {
+  for (let i = 0; i < 10; i++) {
+    paint();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", windowStart);
