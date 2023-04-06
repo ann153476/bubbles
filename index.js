@@ -1,10 +1,12 @@
-let bubbles = document.querySelector(".bubbles__box");
+const bubbles = document.querySelector(".bubbles__box");
 
 bubbles.addEventListener("click", (e) => {
-  let sound = document.getElementById("Sound");
+  const sound = document.getElementById("Sound");
   sound.play();
-  console.log(e, e.target);
+  console.log(e, e.target, e.target.offsetParent.id);
   e.target.remove();
+  // let t = document.querySelector(`#${e.target.offsetParent.id}`);
+  // t.remove();бред
   paint();
 });
 
