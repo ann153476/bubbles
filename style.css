@@ -20,73 +20,26 @@ body {
   box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
   animation: animate 8s ease infinite;
 }
-
+.bubble:nth-child(1) {
+  scale: 0.25;
+  top: 50px;
+  left: 50px;
+}
 .bubble:nth-child(2) {
-  position: relative;
-  zoom: 0.45;
-  left: -15px;
-  top: -110px;
-  animation-delay: -4s;
+  scale: 0.5;
+  bottom: 50px;
+  left: 50px;
 }
-
 .bubble:nth-child(3) {
-  position: relative;
-  zoom: 0.2;
-  right: -85px;
-  top: -290px;
-  animation-delay: -6s;
+  scale: 0.75;
+  bottom: 50px;
+  right: 50px;
 }
-
 .bubble:nth-child(4) {
-  position: relative;
-  zoom: 0.35;
-  left: -125px;
-  bottom: -200px;
-  animation-delay: -3s;
+  scale: 0.9;
+  top: 50px;
+  right: 50px;
 }
-
-.bubble:nth-child(5) {
-  position: relative;
-  zoom: 0.5;
-  left: 0px;
-  top: 195px;
-  animation-delay: -5s;
-}
-
-.bubble:nth-child(6) {
-    position: relative;
-    zoom: 0.1;
-    left: 25px;
-    top: 210px;
-    animation-delay: -6s;
-  }
-
-  .bubble:nth-child(7) {
-    position: relative;
-    zoom: 0.7;
-    left: 50px;
-    bottom: 100px;
-    animation-delay: -7s;
-  }
-
-  .bubble:nth-child(8) {
-    position: relative;
-    zoom: 0.4;
-    left: -600px;
-    top: -480px;
-    animation-delay: -7s;
-  }
-
-  .bubble:nth-child(9) {
-    position: relative;
-    zoom: 0.15;
-    left: -400px;
-    top: -380px;
-    animation-delay: -5s;
-  }
-
-  
-
 @keyframes animate {
   0%,
   100% {
