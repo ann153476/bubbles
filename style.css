@@ -36,9 +36,32 @@ body {
   right: 50px;
 }
 .bubble:nth-child(4) {
-  scale: 0.9;
+  scale: 0.3;
   top: 50px;
   right: 50px;
+}
+.bubble:nth-child(5) {
+  scale: 0.8;
+  top: 20px;
+  right: 30%;
+}
+.bubble:nth-child(6) {
+  scale: 0.1;
+  top: 20px;
+  left: 30%px;
+}
+.bubble:nth-child(7) {
+  scale: 0.4;
+  top: 300px;
+  left: 300px;
+}
+.bubble:nth-child(8) {
+  scale: 0.6;
+  bottom: 60px;
+  right: 50%;
+}
+.bubble:hover {
+  background-color: #ffffff28;
 }
 @keyframes animate {
   0%,
