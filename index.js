@@ -3,7 +3,7 @@ const bubbles = document.querySelector(".bubbles__box");
 bubbles.addEventListener("click", (e) => {
   const sound = document.getElementById("Sound");
   sound.play();
-  console.log(e, e.target, e.target.offsetParent.id);
+  console.log(e, e.target, e.currentTarget.id);
   e.target.remove();
   // let t = document.querySelector(`#${e.target.offsetParent.id}`);
   // t.remove();бред
